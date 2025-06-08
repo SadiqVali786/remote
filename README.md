@@ -7,7 +7,7 @@ This project showcases two simple and useful features built with **Next.js App R
 
 ---
 
-## 1. 🐱 Random Cat Fact (Server Action)
+## 1. 🐱 Random Cat Fact (Server Action with SSR Page)
 
 Fetch random cat facts from [catfact.ninja](https://catfact.ninja/fact) using **Server Actions**.
 
@@ -37,22 +37,21 @@ A simple API that tells whether a number is prime or not.
 
 ### 📡 Endpoint
 
+```json
+### ✅ Example Request
 GET /api/is-prime?number=YOUR_NUMBER
 
-### ✅ Example Request
-
-````json
 {
   "number": 7,
   "isPrime": true
-}```
+}
 
 ### ❌ Invalid Request Example
 GET /api/is-prime?number=hello
-```json
+
 {
   "number": "hello",
   "isPrime": false,
   "error": "Invalid number"
 }
-````
+```
